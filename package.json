@@ -1,0 +1,33 @@
+{
+  "name": "whatsapp-api-by-luqmans",
+  "version": "1.0.0",
+  "description": "WHATSAPP API",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luqmansolihin/whatsapp-api-by-luqmans.git"
+  },
+  "keywords": [
+    "whatsapp-api",
+    "node.js"
+  ],
+  "author": "Luqman Solihin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luqmansolihin/whatsapp-api-by-luqmans/issues"
+  },
+  "homepage": "https://github.com/luqmansolihin/whatsapp-api-by-luqmans#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^6.14.2",
+    "http": "^0.0.1-security",
+    "qrcode": "^1.5.0",
+    "socket.io": "^4.5.1",
+    "whatsapp-web.js": "^1.17.1"
+  }
+}
