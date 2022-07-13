@@ -191,6 +191,6 @@ app.post('/send-media', [body('phone').notEmpty()], async (req, res) => {
         });
 });
 
-server.listen(3000, function () {
-    console.log('App running on *:', 3000);
+server.listen(8000, function () {
+    console.log('App running on *:', 8000);
 });
