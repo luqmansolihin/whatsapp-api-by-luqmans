@@ -67,9 +67,7 @@
         ></script>
         <script>
             $(document).ready(function () {
-                var socket = io.connect('http://localhost:3000', {
-                    path: '/socket.io',
-                });
+                var socket = io();
 
                 socket.on('message', function (msg) {
                     $('.logs').prepend($('<li>').text(msg));
