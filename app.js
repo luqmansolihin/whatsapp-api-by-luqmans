@@ -73,15 +73,15 @@ io.on('connection', function (socket) {
         socket.emit('message', 'Whatsapp is ready!');
     });
 
-    client.on('authenticated', (session) => {
+    client.on('authenticated', () => {
         console.log('AUTHENTICATED');
         socket.emit('authenticated', 'Whatsapp is authenticated!');
         socket.emit('message', 'Whatsapp is authenticated!');
     });
 
-    client.on('auth_failure', (msg) => {
+    client.on('auth_failure', function (session) {
         // Fired if session restore was unsuccessful
-        console.error('AUTHENTICATION FAILURE', msg);
+        console.error('AUTHENTICATION FAILURE', session);
         socket.emit('unauthenticated', 'Whatsapp is unauthenticated!');
         socket.emit('message', 'Whatsapp is unauthenticated!');
     });

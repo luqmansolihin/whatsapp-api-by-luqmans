@@ -4,7 +4,7 @@
   "description": "WHATSAPP API",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
+    "start": "node app-multiple-device.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -29,5 +29,8 @@
     "qrcode": "^1.5.0",
     "socket.io": "^4.5.1",
     "whatsapp-web.js": "^1.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }
